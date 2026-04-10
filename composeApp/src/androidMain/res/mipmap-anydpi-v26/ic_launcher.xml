@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A imagem no background garante que não haja bordas brancas -->
+    <background android:drawable="@mipmap/ic_launcher_foreground" />
+    <!-- A imagem no foreground com um 'inset' garante que o logo fique na área de segurança -->
+    <foreground>
+        <inset android:drawable="@mipmap/ic_launcher_foreground" android:inset="16%" />
+    </foreground>
+</adaptive-icon>

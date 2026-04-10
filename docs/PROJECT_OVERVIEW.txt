@@ -1,0 +1,30 @@
+PROJECT_OVERVIEW - MultiIconGenerator
+
+MultiIconGenerator is a modern, cross-platform utility built with Compose Multiplatform (CMP) to streamline the icon creation process for developers.
+
+1. DESCRIPTION
+The app allows users to select a single high-resolution source image and automatically generates complete icon suites for multiple platforms:
+- Android: Adaptive icons (LDPI to XXXHDPI).
+- iOS: iPhone and iPad App Icons.
+- Windows: Multi-size ICO format support.
+- macOS: ICNS compatible PNG sets.
+- Web: Favicons and Apple Touch Icons.
+
+2. SHARED CODE (commonMain)
+Most of the application logic resides in the commonMain module:
+- UI: Material 3 screens, components, and previews built with Jetpack Compose.
+- ViewModel: Shared state management using UiState and kotlinx.coroutines.flow.
+- Image Processing: Skia-backed scaling and cropping logic for high-quality icon generation.
+- Themes: Shared Material 3 theme definition with light/dark mode support.
+
+3. PLATFORM MODULES
+Platform-specific logic is isolated in separate source sets:
+- androidMain: Handles Android-specific features like MediaStore for file export and the ActivityResultContracts for image picking.
+- desktopMain: Implements Desktop behaviors using Java Desktop (AWT/Swing), including native-style file and directory dialogs via JFileChooser.
+
+4. VISUAL IDENTITY
+The application follows a clean, high-contrast aesthetic:
+- Background: Pure White (#FFFFFF) for the Light mode to ensure clarity.
+- Accents: Vibrant, saturated red (#E51D24) based on the "Apple Music" aesthetic.
+- Design System: Strict adherence to Material Design 3 guidelines with rounded shapes and expressive motion.
+- Adaptive Icon: A custom-designed Android icon that reflects the layered nature of the generation process.
