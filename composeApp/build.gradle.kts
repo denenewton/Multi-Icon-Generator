@@ -91,7 +91,7 @@ compose.desktop {
                 iconFile.set(project.file("src/commonMain/resources/app_icon.icns"))
             }
             linux {
-                iconFile.set(project.file("src/commonMain/resources/icon-256.png"))
+                iconFile.set(project.file("src/commonMain/resources/app_icon.png"))
             }
         }
     }
