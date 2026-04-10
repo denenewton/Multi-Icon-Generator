@@ -89,6 +89,7 @@ compose.desktop {
             }
             macOS {
                 iconFile.set(project.file("src/commonMain/resources/app_icon.icns"))
+                bundleID = "com.example.multiicongenerator"
             }
             linux {
                 iconFile.set(project.file("src/commonMain/resources/app_icon.png"))
